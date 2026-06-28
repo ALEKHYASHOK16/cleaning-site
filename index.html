@@ -5,117 +5,228 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Anytime Cleaning Services</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-body { margin:0; font-family: Arial; }
-header {
-  background:#0f172a;
-  color:white;
-  text-align:center;
-  padding:80px 20px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-header h1 { font-size:40px; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
 
 .btn {
-  background:#22c55e;
-  color:white;
-  padding:12px 20px;
-  text-decoration:none;
+  background: #22c55e;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-section { padding:50px 20px; text-align:center; }
+.btn:hover {
+  background: #16a34a;
+}
 
+/* SECTION */
+section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* SERVICES */
 .services {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
 }
 
 .card {
-  border:1px solid #ddd;
-  padding:20px;
-  border-radius:8px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
 }
 
-.contact { background:#f4f4f4; }
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* ABOUT */
+.about {
+  background: #f9f9f9;
+  font-size: 18px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* CONTACT */
+.contact {
+  background: #111;
+  color: white;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+}
 
 input, textarea, select {
-  width:90%;
-  padding:10px;
-  margin:10px 0;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
 }
 
 button {
-  padding:10px 20px;
-  background:black;
-  color:white;
-  border:none;
+  width: 100%;
+  padding: 14px;
+  background: #22c55e;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #16a34a;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: white;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero h1 { font-size: 32px; }
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>Anytime Cleaning Services</h1>
-<p>Window Cleaning, Carpet Cleaning, Lawn Care & More</p>
-#contact class="btn">Get Quote</a>
-</header>
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <h1>Anytime Cleaning Services</h1>
+    <p>Professional Window, Carpet & Outdoor Cleaning Solutions</p>
+    #contactGet Free Quote</a>
+  </div>
+</div>
 
+<!-- SERVICES -->
 <section>
-<h2>Our Services</h2>
-<div class="services">
+  <h2>Our Services</h2>
 
-<div class="card">
-<h3>Window Cleaning</h3>
-<p>Balcony access cleaning service.</p>
-</div>
+  <div class="services">
 
-<div class="card">
-<h3>Carpet Cleaning</h3>
-<p>Deep clean & stain removal.</p>
-</div>
+    <div class="card">
+      <h3>Window Cleaning</h3>
+      <p>Expert cleaning with balcony access and safety equipment.</p>
+    </div>
 
-<div class="card">
-<h3>Grass Mowing</h3>
-<p>Professional lawn care.</p>
-</div>
+    <div class="card">
+      <h3>Carpet Cleaning</h3>
+      <p>Deep stain removal and freshness restoration.</p>
+    </div>
 
-<div class="card">
-<h3>Power Washing</h3>
-<p>Restore surfaces like new.</p>
-</div>
+    <div class="card">
+      <h3>Grass Mowing</h3>
+      <p>Professional lawn maintenance for a clean yard.</p>
+    </div>
 
-<div class="card">
-<h3>Driveway Painting</h3>
-<p>Clean and durable finish.</p>
-</div>
+    <div class="card">
+      <h3>Power Washing</h3>
+      <p>Restore driveways, patios & outdoor surfaces.</p>
+    </div>
 
-</div>
+    <div class="card">
+      <h3>Driveway Painting</h3>
+      <p>Enhance curb appeal with long-lasting finishes.</p>
+    </div>
+
+  </div>
 </section>
 
+<!-- ABOUT -->
+<section class="about">
+  <h2>Why Choose Us</h2>
+  <p>
+    We provide reliable, affordable, and high-quality cleaning services. 
+    Our team is experienced, detail-oriented, and committed to delivering 
+    the best results for your home or business.
+  </p>
+</section>
+
+<!-- CONTACT -->
 <section id="contact" class="contact">
-<h2>Contact Us</h2>
+  <h2>Get a Quote</h2>
 
-<form name="contact" method="POST" data-netlify="true">
-<input type="hidden" name="form-name" value="contact">
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
 
-<input type="text" name="name" placeholder="Name" required>
-<input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
 
-<select name="service">
-<option>Window Cleaning</option>
-<option>Carpet Cleaning</option>
-<option>Grass Mowing</option>
-<option>Power Washing</option>
-<option>Driveway Painting</option>
-</select>
+    <select name="service">
+      <option>Select Service</option>
+      <option>Window Cleaning</option>
+      <option>Carpet Cleaning</option>
+      <option>Grass Mowing</option>
+      <option>Power Washing</option>
+      <option>Driveway Painting</option>
+    </select>
 
-<textarea name="message" placeholder="Message"></textarea>
+    <textarea name="message" rows="4" placeholder="Your message"></textarea>
 
-<button type="submit">Send</button>
-</form>
-
+    <button type="submit">Submit Request</button>
+  </form>
 </section>
+
+<footer>
+  <p>© 2026 Anytime Cleaning Services</p>
+</footer>
 
 </body>
 </html>
