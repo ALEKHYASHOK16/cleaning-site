@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anytime Cleaning Services</title>
+
+<style>
+body { margin:0; font-family: Arial; }
+header {
+  background:#0f172a;
+  color:white;
+  text-align:center;
+  padding:80px 20px;
+}
+header h1 { font-size:40px; }
+
+.btn {
+  background:#22c55e;
+  color:white;
+  padding:12px 20px;
+  text-decoration:none;
+}
+
+section { padding:50px 20px; text-align:center; }
+
+.services {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card {
+  border:1px solid #ddd;
+  padding:20px;
+  border-radius:8px;
+}
+
+.contact { background:#f4f4f4; }
+
+input, textarea, select {
+  width:90%;
+  padding:10px;
+  margin:10px 0;
+}
+
+button {
+  padding:10px 20px;
+  background:black;
+  color:white;
+  border:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Anytime Cleaning Services</h1>
+<p>Window Cleaning, Carpet Cleaning, Lawn Care & More</p>
+<a href="#contact" class="btn">Get Quote</a>
+</header>
+
+<section>
+<h2>Our Services</h2>
+<div class="services">
+
+<div class="card">
+<h3>Window Cleaning</h3>
+<p>Balcony access cleaning service.</p>
+</div>
+
+<div class="card">
+<h3>Carpet Cleaning</h3>
+<p>Deep clean & stain removal.</p>
+</div>
+
+<div class="card">
+<h3>Grass Mowing</h3>
+<p>Professional lawn care.</p>
+</div>
+
+<div class="card">
+<h3>Power Washing</h3>
+<p>Restore surfaces like new.</p>
+</div>
+
+<div class="card">
+<h3>Driveway Painting</h3>
+<p>Clean and durable finish.</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+
+<form name="contact" method="POST" data-netlify="true">
+<input type="hidden" name="form-name" value="contact">
+
+<input type="text" name="name" placeholder="Name" required>
+<input type="email" name="email" placeholder="Email" required>
+
+<select name="service">
+<option>Window Cleaning</option>
+<option>Carpet Cleaning</option>
+<option>Grass Mowing</option>
+<option>Power Washing</option>
+<option>Driveway Painting</option>
+</select>
+
+<textarea name="message" placeholder="Message"></textarea>
+
+<button type="submit">Send</button>
+</form>
+
+</section>
+
+</body>
+</html>
